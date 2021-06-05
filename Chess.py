@@ -15,6 +15,19 @@ board = [
     [" 8 ", "WRL", "WNL", "WBL", "WQN", "WKG", "WBR", "WNR", "WRR",],
 ]
 
+#board of all legal white bishop move 
+bishopBoard = [
+    [" 0 ", " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ",],
+    [" 1 ", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX",],
+    [" 2 ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ",],
+    [" 3 ", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX",],
+    [" 4 ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ",],
+    [" 5 ", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX",],
+    [" 6 ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ",],
+    [" 7 ", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX",],
+    [" 8 ", "XXX", "   ", "XXX", "   ", "XXX", "   ", "XXX", "   ",],
+]
+
 
 for i in range(len(board)):
     print(board[i])
