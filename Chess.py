@@ -1,5 +1,5 @@
 '''
-KINDA STOPPED THIS BECAUSE CONTROLS ARE CONFUSING AND SO ARE GRAPHICS 
+KINDA STOPPED THIS BECAUSE CONTROLS ARE CONFUSING AND SO ARE GRAPHICS I DIDNT WANT TO USE PYGAME BUT IT JUST GETS WAY TO HARD TO KEEP TRACK
 '''
 
 
@@ -42,6 +42,9 @@ while True:
         piece = input("What piece do you want to move:\n")
         goX = int(input("what point X do you want to go to\n"))
         goY = int(input("what Y point do you want to go to\n"))
+        if(piece == 'BBR' or piece == 'WBL'):
+            if(bishopBoard[goX][goY] != 'XXX'):
+                print("Invalid Move")
         if goX <= 0 or goX > 8:
             continue
 
@@ -51,7 +54,7 @@ while True:
         else:
             break
 
-
+            
 
     def drawBoard():
         print("Current Board:")
